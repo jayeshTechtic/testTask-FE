@@ -29,8 +29,8 @@ const PropertyListing: React.FC = () => {
       }
       const data = await response.json();
       setProperties(data.data);
-      setTotalPages(data.pagination.totalPages);
-      setCurrentPage(data.pagination.page);
+      setTotalPages(data.settings.totalPages);
+      setCurrentPage(data.settings.page);
     } catch (error) {
       console.error("Error fetching properties:", error);
     } finally {
