@@ -22,7 +22,7 @@ const PropertyListing: React.FC = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:5000/api/properties?${filters}&page=${page}&limit=10`
+        `http://45.79.111.106:3000/api/properties?${filters}&page=${page}&limit=10`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch properties");
